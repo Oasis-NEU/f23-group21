@@ -1,7 +1,12 @@
-import Image from 'next/image'
+
 
 export default function Home() {
   return (
-    <header> </header>
+
+    <main>
+      <h1>placeholder</h1>
+      <p>placeholder</p>
+    </main>
+    
   )
 }
