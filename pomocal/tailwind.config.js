@@ -5,9 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
+  theme: { 
+    borderRadius: { 
+      DEFAULT: '50px',
+      'none': '0', 
+      'md' : '25px',
+      'lg': '50px',
+    },
     extend: {
-      
     },
   },
   plugins: [],
