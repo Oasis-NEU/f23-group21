@@ -6,6 +6,8 @@ import {signIn} from 'next-auth/react';
 export function GoogleAuthButton(){
     const AuthClick = () => {signIn("google")};
     return( 
-        <button onClick = {AuthClick}>Login with Google</button>
+        <div className="flex h-screen items-center justify-center">
+        <button onClick = {AuthClick} className ="bg-white drop-shadow-lg">Login with Google</button>
+        </div>
     )
 };
