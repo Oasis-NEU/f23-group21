@@ -1,5 +1,5 @@
 import React from 'react';
-import Timerbox from './TimerBox';
+import { Timerbox } from './TimerBox';
 
 
 const Sidebar = () => {
@@ -14,6 +14,7 @@ const Sidebar = () => {
             <Timerbox/>
         </div>
     )
-}
+
+    }
 
 export default Sidebar;
