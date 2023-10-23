@@ -11,7 +11,8 @@ module.exports = {
       'none': '0', 
       'md' : '25px',
       'lg': '50px',
-    },
+    }, 
+    
     extend: {
     },
   },

@@ -1,15 +1,20 @@
 import React from 'react';
+import Timerbox from './TimerBox';
+
 
 const Sidebar = () => {
     return (
-        <div className="float-right box-border h-screen w-1/3 bg-white text-center rounded-tl-lg rounded-bl-lg">
-                <h1 className="text-center">
-                    placeholder text
-                </h1>
-    
+        //main div
+        
+        <div className="
+        float-right 
+        box-border h-screen w-1/3 
+        bg-white 
+        text-center 
+        rounded-tl-lg rounded-bl-lg 
+        px-2.5 pt-5">
+            <Timerbox/>
         </div>
-
-           
     )
 }
 
