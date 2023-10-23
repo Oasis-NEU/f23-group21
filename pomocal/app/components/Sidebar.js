@@ -4,8 +4,6 @@ import Timerbox from './TimerBox';
 
 const Sidebar = () => {
     return (
-        //main div
-        
         <div className="
         float-right 
         box-border h-screen w-1/3 
