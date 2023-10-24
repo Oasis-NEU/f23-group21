@@ -6,7 +6,7 @@ export default function login(){
     return(
         <div>
             <GoogleAuthButton></GoogleAuthButton>
-            <h1>testing 213</h1>
+            <h1>not sure what to do yet</h1>
         </div>
     )
 };

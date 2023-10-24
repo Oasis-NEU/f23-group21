@@ -3,7 +3,7 @@ import NextAuth from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 
 
-export default nextauth = ({
+export const authOptions = ({
     providers:[
         GoogleProvider({
             clientId: process.env.CLIENT_ID,
@@ -13,4 +13,6 @@ export default nextauth = ({
     ],
 });
 
+// https://localhost:3000/api/auth/signin
+export default NextAuth(authOptions);
 
