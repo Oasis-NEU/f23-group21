@@ -13,7 +13,7 @@ module.exports = {
       'lg': '50px',
     }, 
     colors: {
-      'beige': '#E8CEB5',
+      'beige': '#cfcaac',
       'darkgreen': '#555843',
       'darkergreen': '#071104',
       'lightgreen': '#A7D397',

@@ -1,6 +1,8 @@
 import React from "react";
 import { TButton } from "./TButton";
 import { SkipButton } from "./TButton";
+import { Addtask } from "./Taskbox"
+import { Tasktemp } from "./Taskbox"
 
 export const Timerbox = () => {
   return (
@@ -8,10 +10,9 @@ export const Timerbox = () => {
       className="
             box-border w-full h-screen"
     >
-      <div className="flex-row h-1/3 border">
+      <div className="flex-row h-1/3">
         <div
-          className="box-border h-4/6 w-full flex justify-center
-        border"
+          className="box-border h-4/6 w-full flex justify-center"
         >
           <div
             className="
@@ -34,7 +35,7 @@ export const Timerbox = () => {
           </div>
         </div>
 
-        <div className="box border h-2/6 w-full flex justify-center">
+        <div className="box-border h-2/6 w-full flex justify-center">
           <div className="flex h-full w-5/6 justify-center">
             <TButton />
             <SkipButton />
@@ -42,9 +43,34 @@ export const Timerbox = () => {
         </div>
       </div>
 
-      <div className="box-border h-2/3 w-full flex justify-center pt-5">
-        <div className="flex-row h-full w-5/6 border ">
-          <div className="box-border h-1/6 w-full border">placeholder</div>
+      <div className="box-border h-full w-full flex justify-center pt-5">
+        <div className="flex-row h-full w-5/6">
+          <Addtask/>
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+
+          <div className="pt-5">
+          <Tasktemp/>
+          </div>
+          
+
         </div>
       </div>
     </div>
