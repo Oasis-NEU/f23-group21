@@ -12,7 +12,16 @@ module.exports = {
       'md' : '25px',
       'lg': '50px',
     }, 
-    
+    colors: {
+      'beige': '#E8CEB5',
+      'darkgreen': '#555843',
+      'darkergreen': '#071104',
+      'lightgreen': '#A7D397',
+      'black': '#000000',
+      'white': '#FFFFFF',
+      'gray': '#D0D4CA',
+    },
+
     extend: {
     },
   },
