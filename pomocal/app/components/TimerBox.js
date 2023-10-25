@@ -1,10 +1,23 @@
 import React from "react";
+import { useCountdown } from './Countdown';
+import { useState, useEffect } from 'react';
 import { TButton } from "./TButton";
 import { SkipButton } from "./TButton";
 import { Addtask } from "./Taskbox"
 import { Tasktemp } from "./Taskbox"
 
+{/* const formatTime = (seconds) => {
+  const minutes = Math.floor(seconds / 60); //formats the current count to the nearest second
+  const remainingSeconds = seconds % 60; 
+  const formattedTime = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+return formattedTime; 
+};*/}
+
 export const Timerbox = () => {
+  const { minutes, seconds, start, pause, resume, skip, togglepause } = useCountdown();
+
+ 
+
   return (
     <div
       className="
@@ -24,12 +37,9 @@ export const Timerbox = () => {
           >
             <div className="flex box-border h-full items-center justify-center">
               <h1
-                className="
-                            text-9xl
-                            font-inter
-                            font-bold"
+                className="text-9xl font-inter font-bold"
               >
-                24:56
+                {minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}
               </h1>
             </div>
           </div>
@@ -37,8 +47,8 @@ export const Timerbox = () => {
 
         <div className="box-border h-2/6 w-full flex justify-center">
           <div className="flex h-full w-5/6 justify-center">
-            <TButton />
-            <SkipButton />
+            <TButton toggleCountdown={ togglepause } />
+            <SkipButton skipCountdown ={ skip } />
           </div>
         </div>
       </div>

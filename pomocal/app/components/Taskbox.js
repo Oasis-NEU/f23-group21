@@ -20,7 +20,8 @@ export const Tasktemp = () => {
                   drop-shadow-[0_1px_3px_lightgrey] 
                   text-center 
                   rounded-tl-md rounded-bl-md rounded-tr-md rounded-br-md
-                  text-black hover:text-white">
+                  text-black hover:text-white
+                  resize">
             Task template </button>
     )
 }
