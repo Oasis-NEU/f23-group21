@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 
 //creates the countdown, and mechanisms to change the current countdown status
 export function useCountdown() {
-    const[secondsLeft, setSecondsLeft] = useState(0);
-    const [isPaused, setIsPaused] = useState(false); //isPaused is the current state, setIsPaused is the state we want to change into
+    const[secondsLeft, setSecondsLeft] = useState(1500);
+    const [isPaused, setIsPaused] = useState(true); //isPaused is the current state, setIsPaused is the state we want to change into
     
     useEffect(() => {
         if (secondsLeft <= 0 || isPaused) return;
