@@ -48,7 +48,7 @@ export const Timerbox = () => {
         <div className="box-border h-2/6 w-full flex justify-center">
           <div className="flex h-full w-5/6 justify-center">
             <TButton toggleCountdown={ togglepause } />
-            <SkipButton skipCountdown ={ skip } />
+            <SkipButton NextButton ={ skip } />
           </div>
         </div>
       </div>

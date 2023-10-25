@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export function useCountdown() {
     const[secondsLeft, setSecondsLeft] = useState(1500);
     const [isPaused, setIsPaused] = useState(true); //isPaused is the current state, setIsPaused is the state we want to change into
-    
+
     useEffect(() => {
         if (secondsLeft <= 0 || isPaused) return;
 
@@ -29,7 +29,7 @@ export function useCountdown() {
     }
 
     function skip(seconds) {
-        setSecondsLeft(seconds);
+        setSecondsLeft((prevSecondsLeft) => (prevSecondsLeft === 1500 ? 300 : 1500)); //checks if previous state started at 25 mins, if it did, now start at 5 mins
         setIsPaused(true);
     }
     
@@ -42,3 +42,7 @@ export function useCountdown() {
 
     return { minutes, seconds, start, pause, resume, skip, togglepause };
 }
+
+
+
+
