@@ -34,7 +34,7 @@ export const TButton = ({ toggleCountdown }) => {
 export const SkipButton = ({ NextButton }) => {
   return (
     <div className="h-full w-full flex justify-center pt-5">
-      <button onClick={() => NextButton (300)}
+      <button onClick={() => NextButton ()}
         className="
                   box-border h-full w-5/6
                   transition ease-in-out delay-50 bg-[#F1F1F1] hover:scale-105 hover:bg-darkgreen duration-100

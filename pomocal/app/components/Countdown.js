@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 
-
 //creates the countdown, and mechanisms to change the current countdown status
 export function useCountdown() {
-    const[secondsLeft, setSecondsLeft] = useState(1500);
+    const[secondsLeft, setSecondsLeft] = useState(0);
     const [isPaused, setIsPaused] = useState(true); //isPaused is the current state, setIsPaused is the state we want to change into
+    const [count, setCount] = useState(2); // Use state to track the count, setcount is function that changes count
+
 
     useEffect(() => {
         if (secondsLeft <= 0 || isPaused) return;
@@ -28,9 +29,18 @@ export function useCountdown() {
         setIsPaused(false);
     }
 
-    function skip(seconds) {
-        setSecondsLeft((prevSecondsLeft) => (prevSecondsLeft === 1500 ? 300 : 1500)); //checks if previous state started at 25 mins, if it did, now start at 5 mins
+    function skip() {
+        console.log('Current count:', count);
+        if (count % 2 == 1) {
+        setSecondsLeft(300); 
         setIsPaused(true);
+        setCount(count + 1); //updates count by 1 to alternate between the 25 and 5 mins
+        }
+        else {
+            setSecondsLeft(1500); 
+            setIsPaused(true);
+            setCount(count + 1);
+        }
     }
     
     function togglepause(){
@@ -42,7 +52,4 @@ export function useCountdown() {
 
     return { minutes, seconds, start, pause, resume, skip, togglepause };
 }
-
-
-
 
