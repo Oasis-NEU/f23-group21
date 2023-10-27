@@ -16,7 +16,10 @@ export default function Home() {
             <div className="pt-10">
               <iframe src="https://calendar.google.com/calendar/embed?src=15e4039ca6256b3d89ab6763acca421e69275afa324f25dafdbd2567ac5cb97c%40group.calendar.google.com&ctz=America%2FNew_York" 
               style={{background:"#E8CEB5"}} width="1000" height="800" 
-              className="hover:drop-shadow-[0_1px_5px_#071104] "></iframe> 
+              className="hover:drop-shadow-[0_1px_5px_#071104] 
+                        filter -hue-rotate-180
+                        saturate-50
+"></iframe> 
             </div>
           </center>      
         </div>
