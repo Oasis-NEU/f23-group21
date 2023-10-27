@@ -13,7 +13,7 @@ const Sidebar = () => {
         rounded-tl-lg rounded-bl-lg 
         min-h-screen
         px-2.5 pt-5">
-      <div nameClass="flex h-full w-full justify-center">
+      <div className="flex h-full w-full justify-center">
         <Timerbox />
       </div>
     </div>
