@@ -5,13 +5,24 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
+  theme: { 
+    borderRadius: { 
+      DEFAULT: '50px',
+      'none': '0', 
+      'md' : '25px',
+      'lg': '50px',
+    }, 
+    colors: {
+      'beige': '#cfcaac',
+      'darkgreen': '#555843',
+      'darkergreen': '#071104',
+      'lightgreen': '#A7D397',
+      'black': '#000000',
+      'white': '#FFFFFF',
+      'gray': '#D0D4CA',
+    },
+
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
     },
   },
   plugins: [],
