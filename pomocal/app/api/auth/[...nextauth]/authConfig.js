@@ -16,4 +16,3 @@ export const authOptions = ({
 // https://localhost:3000/api/auth/callback/google -> sign in 
 
 export default NextAuth(authOptions);
-

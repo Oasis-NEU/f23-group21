@@ -2,8 +2,6 @@
 import Sidebar from './components/Sidebar';
 import { useState, useEffect } from 'react';
 
-
-
 export default function Home() {
   return (
     <div className="flex-col">
