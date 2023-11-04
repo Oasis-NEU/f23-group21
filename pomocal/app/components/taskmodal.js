@@ -32,22 +32,31 @@ export default function MyModal({ isOpen, closeModal }) {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-xl font-inter font-medium leading-6 text-gray-900"
                   >
-                    Create your Task! 
+                    Create Your Task
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500 font-inter">
-                      Place holder for the task inputs! 
-                    </p>
+                    <div className="pt-5">
+                      <form>
+                       <label className="pb-4" >Task name</label> <br />
+                       <input type="text" placeholder="Add Your Task" name="task name" className="mt-2 border-2 border-solid rounded-lg border-black/25 px-4 py-2" />
+                     </form>
+                    </div>
+                    <div className="pt-4 pb-4">
+                      <form>
+                        <label >Task name</label> <br />
+                        <input type="text" placeholder="Add Your Task" name="task name" className="mt-2 border-2 border-solid rounded-lg border-black/25 px-4 py-2" />
+                     </form>
+                    </div>
                   </div>
 
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 font-inter"
+                      className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium font-inter"
                       onClick={closeModal}>
-                      Done
+                      Save
                     </button>
                   </div>
                 </Dialog.Panel>
