@@ -45,3 +45,12 @@ export const SessionButtonDown = () => {
         
     );
 };
+
+export const SessionText = () => {
+    return (
+        <div>
+            <label className="pb-4" >Estimated Sessions</label> <br />
+            <input type="text" placeholder="1 Session" name="task name" className="mt-2 border-2 border-solid rounded-lg border-black/25 px-4 py-2 w-full" />
+        </div>
+    );
+};

@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import { SessionButtonUp, SessionButtonDown } from './SessionButton'
+import { SessionButtonUp, SessionButtonDown, SessionText } from './SessionButton'
 
 export default function MyModal({ isOpen, closeModal }) {
   return (
@@ -44,8 +44,11 @@ export default function MyModal({ isOpen, closeModal }) {
                        <input type="text" placeholder="Add Your Task" name="task name" className="mt-2 border-2 border-solid rounded-lg border-black/25 px-4 py-2 w-full" />
                      </form>
                     </div>
-                      <div className="flex pt-5 w-full space-x-4">
+                      <div className="flex pt-5 w-full space-x-3">
+                        <SessionText/> 
+
                         <SessionButtonUp/> <SessionButtonDown/>
+                        
                       </div>
                   </div>
 
