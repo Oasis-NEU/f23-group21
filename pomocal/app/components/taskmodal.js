@@ -33,29 +33,36 @@ export default function MyModal({ isOpen, closeModal }) {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-xl font-inter font-medium leading-6 text-gray-900"
+                    className="text-2xl font-inter leading-6 text-gray-900 font-bold pt-2"
                   >
                     Create Your Task
                   </Dialog.Title>
                   <div className="mt-2">
                     <div className="pt-5">
                       <form>
-                       <label className="pb-4" >Task name</label> <br />
-                       <input type="text" placeholder="Add Your Task" name="task name" className="mt-2 border-2 border-solid rounded-lg border-black/25 px-4 py-2 w-full" />
+                       <label className="pb-4 text-xl font-inter font-bold" >Task name</label> <br />
+                       <input type="text" placeholder="Add Your Task" name="task name" className="text-xl focus:outline-none font-inter font-semibold mt-2 bg-[#f1f1f1] focus:bg-[#d9d9d9] rounded-[7px] px-4 py-4 w-full" />
                      </form>
                     </div>
-                      <div className="flex pt-5 w-full space-x-3">
-                        <SessionText/> 
-
-                        <SessionButtonUp/> <SessionButtonDown/>
-                        
+                      <div className="flex-col align-items pt-5 pb-10">
+                        <SessionText/>
                       </div>
                   </div>
 
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium font-inter"
+                      className="box-border w-1/5
+                      transition ease-in-out delay-50 bg-[#f1f1f1] 
+                      hover:scale-105 hover:shadow-[0px_3px_0px_0px_#c1c1c1] duration-100
+                      shadow-[0px_5px_0px_0px_#c1c1c1]
+                      active:shadow-[0px_0px_0px_0px_#c1c1c1]
+                      py-3
+                      active:translate-y-2
+                      text-center 
+                      rounded-[15px]
+                      text-black text-xl
+                      resize font-bold"
                       onClick={closeModal}>
                       Save
                     </button>
