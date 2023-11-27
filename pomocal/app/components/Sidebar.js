@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div
       className="
         float-right 
-        box-border h-screen w-1/3 
+        box-border h-screen w-[33vw] 
         bg-white 
         text-center 
         rounded-tl-lg rounded-bl-lg 

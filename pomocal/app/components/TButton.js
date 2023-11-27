@@ -15,11 +15,11 @@ export const TButton = ({ toggleCountdown }) => {
                     hover:drop-shadow-[0_8px_0px_#071104] 
                     drop-shadow-[0_1px_3px_lightgrey] 
                     text-center 
-                    rounded-tl-md rounded-bl-md rounded-tr-md rounded-br-md
+                    rounded-[1vw]
                     hover:text-white"
                     >
         <h1
-          className="text-4xl
+          className="text-[2.5vw]
                       font-inter
                       font-bold"> 
                       <center>
@@ -41,12 +41,12 @@ export const SkipButton = ({ NextButton }) => {
                   hover:drop-shadow-[0_8px_0px_#071104] 
                   drop-shadow-[0_1px_3px_lightgrey] 
                   text-center 
-                  rounded-tl-md rounded-bl-md rounded-tr-md rounded-br-md
+                  rounded-[1vw]
                   text-black hover:text-white"
       >
         <h1
           className="
-                            text-4xl
+                            text-[2.5vw]
                             font-inter
                             font-bold"
         >

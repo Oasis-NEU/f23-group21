@@ -32,12 +32,12 @@ export const Timerbox = () => {
                     box-border h-full w-5/6 
                     bg-darkgreen
                     text-center 
-                    rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg
+                    rounded-[3vw]
                     text-white"
           >
             <div className="flex box-border h-full items-center justify-center">
               <h1
-                className="text-9xl font-inter font-bold"
+                className="text-[7vw] font-inter font-bold"
               >
                 {minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}
               </h1>
